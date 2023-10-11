@@ -1,0 +1,108 @@
+body, html {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100dvh;
+    width: 100vw;
+}
+
+#corpo {
+    height: 80%;
+    width: 50%;
+    max-width: 400px;
+    max-height: 700px;
+
+    border-radius: 55px;
+    
+    background-color: #292929;
+
+    box-shadow: 5px 10px 20px 0px rgba(11,11,11,0.5), inset 0px 3px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
+#display {
+    height: 30%;
+    margin: 8px;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    border-radius: 50px 50px 10px 10px;
+    border: 3px solid black;
+
+    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.25), 0px 3px 1px 0px rgba(255, 255, 255, 0.1) ;
+
+    background-color: #0B0B0B;
+}
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 60%;
+    margin-top: 20px;
+
+    border-radius: 0px 0px 50px 50px;
+}
+
+.linha {
+    height: 65px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    height: 100%;
+    width: 65px;
+    color: #FFACAD;
+    font-size: xx-large;
+    background: linear-gradient(119deg, rgb(55, 55, 55) 5%, rgba(41,41,41,1) 35%);
+    border: none;
+    box-shadow: 10px 10px 30px 0px rgba(11,11,11,0.5), inset 10px 10px 30px 0px rgba(55, 55, 55, 0.5);
+    border-radius: 50%;
+} 
+
+button:hover {
+    background:rgb(55, 55, 55);
+    transition: all 0.2s;
+}
+
+button:active {
+    background:rgb(100, 100, 100);
+    transition: all 0.2s;
+}
+
+#igual {
+    background: #FFACAD;
+    color: #292929;
+}
+
+#igual:active {
+    background: #ffc5c5;
+}
+
+#numeros {
+    margin: 20px 30px;
+    height: 40%;
+    width: 100%;
+    text-align: right;
+    font-size: 8vh;
+    font-weight: bolder;
+    color: #e8e8e8;
+    background-color: #0B0B0B;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
